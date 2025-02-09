@@ -1,0 +1,75 @@
+{
+    "locales": {
+        "en": {
+            "title": "Awards",
+            "title_menu": "Achievements",
+            "title_long_prefix": "Here are my",
+            "title_long": "Career **Achievements**"
+        },
+        "fr": {
+            "title": "Réalisations",
+            "title_menu": "Réalisations",
+            "title_long_prefix": "Voici",
+            "title_long": "Mes **Réalisations**"
+        }
+    },
+    "articles": [
+        {
+            "id": "certifications",
+            "component": "ArticleCards",
+            "config": {},
+            "locales": {
+                "en": { "title": "Certifications" },
+                "fr": { "title": "Certifications" }
+            },
+            "items": [
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-certificate",
+                        "faColors": {"bg": "#326CE5", "fill": "#EEE"}
+                    },
+                    "dates": {
+                        "start": "12/10/2024",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://courses.cognitiveclass.ai/certificates/f178b80d9e484206ad6bb1c3abf909c3" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "**IBM**",
+                            "text": "Python for Data Science"
+                        },
+                        "fr": {
+                            "text": "Python pour la Science des Données"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-sitemap",
+                        "faColors": {"bg": "#FFD700", "fill": "#111"}
+                    },
+                    "dates": {
+                        "start": "20/05/2024",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://www.scrumstudy.com/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "**ScrumStudy**",
+                            "text": "Scrum Fundamentals Certified (SFC)"
+                        },
+                        "fr": {
+                            "text": "Certifié Scrum Fundamentals (SFC)"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
