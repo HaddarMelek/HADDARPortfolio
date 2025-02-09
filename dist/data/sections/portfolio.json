@@ -1,0 +1,102 @@
+{
+  "locales": {
+      "en": {
+          "title": "Academic Projects",
+          "title_long_prefix": "Here are some of my",
+          "title_long": "Academic Projects"
+      },
+      "fr": {
+          "title": "Projets Académiques",
+          "title_long_prefix": "Voici quelques-uns de mes",
+          "title_long": "Projets Académiques"
+      }
+  },
+  "articles": [
+      {
+          "id": "portfolio",
+          "component": "ArticlePortfolio",
+          "config": {},
+          "locales": {},
+          "categories": [
+              {
+                  "id": "webapps",
+                  "locales": {
+                      "en": {"singular": "Web Application", "plural": "Web Applications"},
+                      "fr": {"singular": "Application Web", "plural": "Applications Web"}
+                  }
+              }
+          ],
+          "items": [
+              {
+                  "categoryId": "webapps",
+                  "icon": {
+                      "img": "images/pictures/ehealth.jpeg",
+                      "fa": "",
+                      "faColors": {"bg": null, "fill": null}
+                  },
+                  "links": [
+                      {"faIcon": "fa-solid fa-link", "href": "https://e-health-platform.vercel.app/"}
+                  ],
+                  "locales": {
+                      "en": {
+                          "title": "E-Health Platform",
+                          "text": "EHealthPlatform is a web application that unites patients and doctors with a single administrator. The platform allows patients to consult doctors, make appointments, and manage their profiles. Meanwhile, the administrator can manage user accounts, appointments, revenues, and analyze site activities using graphs.",
+                          "tags": ["ReactJS", "Web Development", "Healthcare"]
+                      },
+                      "fr": {
+                          "title": "Plateforme E-Health",
+                          "text": "EHealthPlatform est une application web qui unifie les patients et les médecins avec un administrateur unique. Ce projet permet aux patients de consulter des médecins, de prendre des rendez-vous et de gérer leur profil, tandis que l'administrateur peut gérer les comptes des utilisateurs, les rendez-vous, les revenus et analyser les activités sur le site à l'aide de graphiques.",
+                          "tags": ["ReactJS", "Développement Web", "Santé"]
+                      }
+                  }
+              },
+              {
+                  "categoryId": "webapps",
+                  "icon": {
+                      "img": "images/pictures/ecompulse.jpeg",
+                      "fa": "",
+                      "faColors": {"bg": null, "fill": null}
+                  },
+                  "links": [
+                      {"faIcon": "fa-brands fa-github", "href": "https://github.com/HaddarMelek/EcomPulse"}
+                  ],
+                  "locales": {
+                      "en": {
+                          "title": "EcomPulse",
+                          "text": "EcomPulse is a web-based e-commerce application developed in .NET, offering role management for both admins and customers. It provides a seamless shopping experience with a shopping cart system, order and payment processing, and a user management module.",
+                          "tags": ["ASP.NET Core MVC", "PostgreSQL", "E-commerce"]
+                      },
+                      "fr": {
+                          "title": "EcomPulse",
+                          "text": "EcomPulse est une application web e-commerce développée en .NET, permettant la gestion des rôles administrateur et client. Elle offre une expérience d'achat fluide avec un système de panier, de commande et de paiement, ainsi qu'un module de gestion des utilisateurs.",
+                          "tags": ["ASP.NET Core MVC", "PostgreSQL", "E-commerce"]
+                      }
+                  }
+              },
+              {
+                  "categoryId": "webapps",
+                  "icon": {
+                      "img": "images/pictures/cvmaker.jpeg",
+                      "fa": "",
+                      "faColors": {"bg": null, "fill": null}
+                  },
+                  "links": [
+                      {"faIcon": "fa-brands fa-github", "href": "https://github.com/HaddarMelek/my_cv_maker/"}
+                  ],
+                  "locales": {
+                      "en": {
+                          "title": "My CV Maker",
+                          "text": "My CV Maker is a Laravel-based application that allows users to create, view, update, and delete customized CVs online. The platform provides easy tools for editing personal information and managing CV templates.",
+                          "tags": ["Laravel", "CV", "Web Application"]
+                      },
+                      "fr": {
+                          "title": "My CV Maker",
+                          "text": "My CV Maker est une application basée sur Laravel permettant aux utilisateurs de créer, lire, mettre à jour et supprimer des CV personnalisés en ligne. La plateforme fournit des outils simples pour modifier les informations personnelles et gérer les modèles de CV.",
+                          "tags": ["Laravel", "CV", "Application Web"]
+                      }
+                  }
+              }
+          ]
+      }
+  ]
+}
