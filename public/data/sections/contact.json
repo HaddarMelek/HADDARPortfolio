@@ -1,0 +1,114 @@
+{
+    "locales": {
+        "en": {
+            "title": "Contact",
+            "title_long_prefix": "Don't hesitate to",
+            "title_long": "**Contact** Me"
+        },
+        "fr": {
+            "title": "Contact",
+            "title_long_prefix": "N'hésitez pas à",
+            "title_long": "Me **Contacter**"
+        }
+    },
+    "articles": [
+        {
+            "id": "contact_form",
+            "component": "ArticleContactForm",
+            "config": {},
+            "locales": {
+                "en": {"title": "Send me a **message**"},
+                "fr": {"title": "Envoyez-moi un **message**"}
+            },
+            "items": null
+        },
+        {
+            "id": "contact_list",
+            "component": "ArticleGrid",
+            "config": {
+                "format": "grid"
+            },
+            "locales": {
+                "en": {"title": "Or if you **prefer**..."},
+                "fr": {"title": "Ou si vous **préférez**..."}
+            },
+            "items": [
+                {
+                    "value": "+216 26 379 765",
+                    "links": [
+                        {"href": "tel:21626379765"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-phone",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "Phone"},
+                        "fr": {"title": "Téléphone"}
+                    }
+                },
+                {
+                    "value": "melek.hadar@email.com",
+                    "links": [
+                        {"href": "mailto:melek.hadar@email.com"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-envelope",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "E-mail"},
+                        "fr": {"title": "E-mail"}
+                    }
+                },
+                {
+                    "value": "@melekhaddar",
+                    "links": [
+                        {"href": "https://www.linkedin.com/in/m%C3%A8l%C3%A8k-haddar-578146315/"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-linkedin",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "Linkedin"},
+                        "fr": {"title": "Linkedin"}
+                    }
+                },
+                {
+                    "value": "Melek HADDAR ",
+                    "links": [
+                        {"href": "https://facebook.com"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-facebook",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "Facebook"},
+                        "fr": {"title": "Facebook"}
+                    }
+                },
+                {
+                    "value": "@melekhaddar",
+                    "links": [
+                        {"href": "https://instagram.com"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-instagram",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "Instagram"},
+                        "fr": {"title": "Instagram"}
+                    }
+                }
+            ]
+        }
+    ]
+}

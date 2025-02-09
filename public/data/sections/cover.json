@@ -1,0 +1,151 @@
+{
+  "locales": {
+      "en": {
+          "title": "Welcome!",
+          "title_menu": "About me",
+          "title_long_prefix": "Hello...",
+          "title_long": "I'm **Melek HADDAR!**"
+      },
+      "fr": {
+          "title": "Salut !",
+          "title_menu": "À propos",
+          "title_long_prefix": "Salut...",
+          "title_long": "Je suis **Melek HADDAR!**"
+      }
+  },
+  "articles": [
+      {
+          "id": "contact_list",
+          "component": "ArticleGrid",
+          "config": {
+              "ignorePaddingTop": true,
+              "format": "inline"
+          },
+          "locales": {
+              "en": {},
+              "fr": {}
+          },
+          "items": [
+              {
+                  "value": "Tunisia",
+                  "links": [
+                      {"href": "https://www.google.com/maps/place/Tunisia"}
+                  ],
+                  "icon": {
+                      "img": null,
+                      "fa": "fa-solid fa-city",
+                      "faColors": {"bg": null, "fill": null}
+                  },
+                  "locales": {
+                      "en": {"value": "Tunisia"},
+                      "fr": {"value": "Tunisie"}
+                  }
+              },
+              {
+                  "value": "melek.hadar@gmail.com",
+                  "links": [
+                      {"href": "mailto:melek.hadar@gmail.com"}
+                  ],
+                  "icon": {
+                      "img": null,
+                      "fa": "fa-solid fa-envelope",
+                      "faColors": {"bg": null, "fill": null}
+                  }
+              },
+              {
+                  "value": "@melekhaddar",
+                  "links": [
+                      {"href": "https://github.com/HaddarMelek"}
+                  ],
+                  "icon": {
+                      "img": null,
+                      "fa": "fa-brands fa-github",
+                      "faColors": {"bg": null, "fill": null}
+                  }
+              },
+              {
+                  "value": "Melek Haddar",
+                  "links": [
+                      {"href": "https://www.linkedin.com/in/m%C3%A8l%C3%A8k-haddar-578146315/"}
+                  ],
+                  "icon": {
+                      "img": null,
+                      "fa": "fa-brands fa-linkedin",
+                      "faColors": {"bg": null, "fill": null}
+                  }
+              }
+          ]
+      },
+      {
+          "id": "short_description",
+          "component": "ArticleInfoBlock",
+          "config": {},
+          "locales": {
+              "en": {"title": "**A little bit** about me..."},
+              "fr": {"title": "**Un peu** à propos de moi..."}
+          },
+          "items": [
+              {
+                  "icon": {
+                      "img": "images/svg/logo.jpg",
+                      "fa": null,
+                      "faColors": {"bg": null, "fill": null}
+                  },
+                  "locales": {
+                      "en": {"text": "<p>I am a second-year software engineering student with skills in Java, .NET, Python, C/C++, as well as solid experience with ReactJs, Laravel, UML, HTML, CSS, JavaScript, MongoDb, and PostgreSQL.</p><p>Dynamic, motivated, and curious, I am looking for a summer internship to apply my skills and further enrich my professional experience.</p>"},
+                      "fr": {"text": "<p>Élève ingénieur en deuxième année de génie logiciel, j’ai acquis des compétences en Java, .NET, Python, C/C++, ainsi qu’une bonne expérience avec ReactJs, Laravel, UML, HTML, CSS et JavaScript, MongoDb et PostgreSQL.</p><p>Dynamique, motivée et curieuse, je recherche un stage d’été pour mettre en pratique mes compétences et enrichir mon expérience professionnelle.</p>"}
+                  }
+              }
+          ]
+      },
+      {
+          "id": "interests",
+          "component": "ArticleGrid",
+          "config": {
+              "format": "grid"
+          },
+          "locales": {
+              "en": {"title": "Leisure Activities"},
+              "fr": {"title": "Loisirs"}
+          },
+          "items": [
+              {
+                  "icon": {
+                      "img": null,
+                      "fa": "fa-solid fa-dumbbell",
+                      "faColors": null
+                  },
+                  "value": null,
+                  "locales": {
+                      "en": {
+                          "title": "Sports (Yoga, Pilates, Martial Arts)",
+                          "info": "Engaging in activities like yoga, pilates, and martial arts to maintain physical fitness and mental well-being."
+                      },
+                      "fr": {
+                          "title": "Sports (Yoga, Pilates, Arts martiaux)",
+                          "info": "Pratiquer des activités comme le yoga, le pilates et les arts martiaux pour maintenir la forme physique et le bien-être mental."
+                      }
+                  }
+              },
+              {
+                  "icon": {
+                      "img": null,
+                      "fa": "fa-solid fa-paint-brush",
+                      "faColors": null
+                  },
+                  "value": null,
+                  "locales": {
+                      "en": {
+                          "title": "Creative Activities (Painting, Drawing, Photography)",
+                          "info": "Exploring my creative side through painting, drawing, and photography, experimenting with different styles and techniques."
+                      },
+                      "fr": {
+                          "title": "Activités créatives (Peinture, Dessin, Photographie)",
+                          "info": "Explorer ma créativité à travers la peinture, le dessin et la photographie, en expérimentant avec différents styles et techniques."
+                      }
+                  }
+              }
+          ]
+      }
+  ]
+}

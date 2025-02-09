@@ -1,0 +1,52 @@
+{
+    "locales": {
+        "en": {
+            "title": "Experience",
+            "title_long_prefix": "Summary of my",
+            "title_long": "**Work** Experience"
+        },
+
+        "fr": {
+            "title": "Expérience",
+            "title_long_prefix": "Résumé de mon",
+            "title_long": "Parcours **Professionnel**"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "ecommerce-platform",
+            "component": "ArticleTimeline",
+            "config": {},
+            "locales": {},
+
+            "items": [
+                {
+                    "icon": {
+                        "img": "images/pictures/ecommerce.jpeg",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "08/01/2024",
+                        "end": "08/31/2024"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "E-Commerce Platform (Laravel)",
+                            "info": "Phylia Technology | Internship – August 2024",
+                            "text": "Development of an e-commerce platform using Laravel, Bootstrap, and MySQL, including product, order, and payment management. Designed a responsive user interface to ensure optimal user experience across all devices. Managed roles for sellers, customers, and administrators.",
+                            "tags": ["Laravel", "Bootstrap", "MySQL", "E-commerce"]
+                        },
+                        "fr": {
+                            "title": "Plateforme E-commerce (Laravel)",
+                            "info": "Société Phylia Technology | Stage – Août 2024",
+                            "text": "Développement d'une plateforme e-commerce en Laravel, Bootstrap et MySQL, incluant la gestion des produits, des commandes et des paiements. Conception d'une interface utilisateur responsive, assurant une expérience optimale sur tous les appareils. Gestion des rôles pour vendeurs, clients et administrateurs.",
+                           "tags": ["Laravel", "Bootstrap", "MySQL", "E-commerce"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

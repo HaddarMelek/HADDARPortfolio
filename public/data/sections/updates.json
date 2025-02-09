@@ -1,0 +1,77 @@
+{
+    "locales": {
+        "en": {
+            "title": "Life recently",
+            "title_menu": "Updates",
+            "title_long_prefix": "Take a look at my",
+            "title_long": "Recent **Updates**"
+        },
+
+        "fr": {
+            "title": "Vie Récente",
+            "title_menu": "Mises à Jour",
+            "title_long_prefix": "Découvrez mes",
+            "title_long": "Dernières **Mises à Jour**"
+        }
+        }
+    ,
+      "articles": [
+            {
+                "id": "fun_facts",
+                "component": "ArticleServices",
+                "config": {},
+                "locales": {},
+                "items": [
+                    {
+                        "icon": {
+                            "fa": "fa-solid fa-code",
+                            "faColors": null
+                        },
+                        "locales": {
+                            "en": {
+                                "title": "100+",
+                                "info": "Contributions on GitHub"
+                            },
+                            "fr": {
+                                "title": "100+",
+                                "info": "Contributions sur GitHub"
+                            }
+                        }
+                    },
+                    {
+                        "icon": {
+                            "fa": "fa-solid fa-repo",
+                            "faColors": null
+                        },
+                        "locales": {
+                            "en": {
+                                "title": "16",
+                                "info": "Repositories on GitHub"
+                            },
+                            "fr": {
+                                "title": "16",
+                                "info": "Dépôts sur GitHub"
+                            }
+                        }
+                    },
+                    {
+                        "icon": {
+                            "fa": "fa-solid fa-users",
+                            "faColors": null
+                        },
+                        "locales": {
+                            "en": {
+                                "title": "360",
+                                "info": "Connections on LinkedIn"
+                            },
+                            "fr": {
+                                "title": "360",
+                                "info": "Connexions sur LinkedIn"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    
