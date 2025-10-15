@@ -1,52 +1,100 @@
 {
-    "locales": {
-        "en": {
-            "title": "Experience",
-            "title_long_prefix": "Summary of my",
-            "title_long": "**Work** Experience"
-        },
-
-        "fr": {
-            "title": "Expérience",
-            "title_long_prefix": "Résumé de mon",
-            "title_long": "Parcours **Professionnel**"
-        }
+  "locales": {
+    "en": {
+      "title": "Experience",
+      "title_long_prefix": "Summary of my",
+      "title_long": "**Work** Experience"
     },
-
-    "articles": [
+    "fr": {
+      "title": "Expérience",
+      "title_long_prefix": "Résumé de mon",
+      "title_long": "Parcours **Professionnel**"
+    }
+  },
+  "articles": [
+    {
+      "id": "ari-mayi",
+      "component": "ArticleTimeline",
+      "config": {},
+      "locales": {},
+      "items": [
         {
-            "id": "ecommerce-platform",
-            "component": "ArticleTimeline",
-            "config": {},
-            "locales": {},
-
-            "items": [
-                {
-                    "icon": {
-                        "img": "images/pictures/ecommerce.jpeg",
-                        "fa": "",
-                        "faColors": {"bg": null, "fill": null}
-                    },
-                    "dates": {
-                        "start": "08/01/2024",
-                        "end": "08/31/2024"
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "E-Commerce Platform (Laravel)",
-                            "info": "Phylia Technology | Internship – August 2024",
-                            "text": "Development of an e-commerce platform using Laravel, Bootstrap, and MySQL, including product, order, and payment management. Designed a responsive user interface to ensure optimal user experience across all devices. Managed roles for sellers, customers, and administrators.",
-                            "tags": ["Laravel", "Bootstrap", "MySQL", "E-commerce"]
-                        },
-                        "fr": {
-                            "title": "Plateforme E-commerce (Laravel)",
-                            "info": "Société Phylia Technology | Stage – Août 2024",
-                            "text": "Développement d'une plateforme e-commerce en Laravel, Bootstrap et MySQL, incluant la gestion des produits, des commandes et des paiements. Conception d'une interface utilisateur responsive, assurant une expérience optimale sur tous les appareils. Gestion des rôles pour vendeurs, clients et administrateurs.",
-                           "tags": ["Laravel", "Bootstrap", "MySQL", "E-commerce"]
-                        }
-                    }
-                }
-            ]
+          "icon": {
+            "img": "images/pictures/llm.jpeg",
+            "fa": "",
+            "faColors": { "bg": null, "fill": null }
+          },
+          "dates": { "start": "08/01/2025", "end": "09/30/2025" },
+          "locales": {
+            "en": {
+              "title": "Universal Textual LLM Tool (AI Engineer)",
+              "info": "AriMayi | Internship – Aug 2025 – Sept 2025",
+              "text": "Developed a universal textual LLM tool: model selection and integration (OpenAI, Anthropic, open source), prompt orchestration, API implementation, and business testing (generation, reformulation, summarization, analysis).",
+              "tags": ["AI", "LLM", "OpenAI", "Anthropic", "API"]
+               },
+            "fr": {
+              "title": "Outil LLM textuel universel (Ingénieur IA)",
+              "info": "AriMayi | Stage – Août 2025 – Septembre 2025",
+              "text": "Développement d’un outil LLM textuel universel : sélection et intégration de modèles (OpenAI, Anthropic, open source), orchestration de prompts, mise en place d’API, et tests métiers (génération, reformulation, résumé, analyse).",
+              "tags": ["IA", "LLM", "OpenAI", "Anthropic", "API"]
+                 }
+          }
+        },
+        {
+          "icon": { "img": "images/pictures/register.jpeg", "fa": "", "faColors": { "bg": null, "fill": null } },
+          "dates": { "start": "06/01/2025", "end": "06/30/2025" },
+          "locales": {
+            "en": {
+              "title": "Intelligent Attendance Registry (Full Stack)",
+              "info": "Elite Council Consulting | Internship – June 2025",
+              "text": "Developed an intelligent attendance registry using Flask, React, and MongoDB, integrating AI for absence prediction and automated statistics generation.",
+              "tags": ["Flask", "React", "MongoDB", "AI"]
+              },
+            "fr": {
+              "title": "Registre numérique intelligent (Full Stack)",
+              "info": "Elite Council Consulting | Stage – Juin 2025",
+              "text": "Registre numérique intelligent de gestion des présences, développé avec Flask, React et MongoDB, intégrant l’IA pour la prédiction des absences et la génération de statistiques automatisées.",
+              "tags": ["Flask", "React", "MongoDB", "IA"]
+               }
+          }
+        },
+        {
+          "icon": { "img": "images/pictures/stc.jpeg", "fa": "", "faColors": { "bg": null, "fill": null } },
+          "dates": { "start": "08/01/2024", "end": "08/31/2024" },
+          "locales": {
+            "en": {
+              "title": "Instagram Data Collection Tool (Python)",
+              "info": "Saint Honoré Cosmetics | Internship – August 2024",
+              "text": "Designed an automated lead generation tool via Instagram using Instaloader: hashtag scraping, intelligent extraction of emails from bios and websites, data enrichment, and optimized export for Saleshandy prospecting.",
+              "tags": ["Python", "Scraping", "Instaloader", "Lead Generation"]
+            },
+            "fr": {
+              "title": "Outil de collecte de données Instagram (Python)",
+              "info": "Saint Honoré Cosmetics | Stage – Août 2024",
+              "text": "Conception d’un outil automatisé de génération de leads via Instagram avec Instaloader : scraping par hashtags, extraction intelligente d’emails depuis les bios et sites web, enrichissement des données, et export optimisé pour la prospection sur Saleshandy.",
+              "tags": ["Python", "Scraping", "Instaloader", "Lead Generation"]
+               }
+          }
+        },
+        {
+          "icon": { "img": "images/pictures/ecommerce.jpeg", "fa": "", "faColors": { "bg": null, "fill": null } },
+          "dates": { "start": "07/01/2024", "end": "07/31/2024" },
+          "locales": {
+            "en": {
+              "title": "E-Commerce Platform (Laravel)",
+              "info": "Phylia Technology | Internship – July 2024",
+              "text": "Developed an e-commerce platform using Laravel, Bootstrap, and MySQL, including product, order, and payment management. Designed a responsive user interface to ensure optimal experience across all devices. Managed roles for sellers, customers, and administrators.",
+              "tags": ["Laravel", "Bootstrap", "MySQL", "E-commerce"]
+               },
+            "fr": {
+              "title": "Plateforme E-commerce (Laravel)",
+              "info": "Société Phylia Technology | Stage – Juillet 2024",
+              "text": "Développement d'une plateforme e-commerce en Laravel, Bootstrap et MySQL, incluant la gestion des produits, des commandes et des paiements. Conception d'une interface utilisateur responsive, assurant une expérience optimale sur tous les appareils. Gestion des rôles pour vendeurs, clients et administrateurs.",
+              "tags": ["Laravel", "Bootstrap", "MySQL", "E-commerce"]
+                 }
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
