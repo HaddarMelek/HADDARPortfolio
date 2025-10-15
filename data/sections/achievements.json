@@ -1,75 +1,143 @@
 {
-    "locales": {
-        "en": {
-            "title": "Awards",
-            "title_menu": "Achievements",
-            "title_long_prefix": "Here are my",
-            "title_long": "Career **Achievements**"
-        },
-        "fr": {
-            "title": "Réalisations",
-            "title_menu": "Réalisations",
-            "title_long_prefix": "Voici",
-            "title_long": "Mes **Réalisations**"
-        }
+  "locales": {
+    "en": {
+      "title": "Certifications",
+      "title_menu": "Certifications",
+      "title_long_prefix": "Here are my",
+      "title_long": "Obtained and In-Progress Certifications"
     },
-    "articles": [
+    "fr": {
+      "title": "Certifications",
+      "title_menu": "Certifications",
+      "title_long_prefix": "Voici mes",
+      "title_long": "Certifications Obtenues et En Cours"
+    }
+  },
+  "articles": [
+    {
+      "id": "certifications_obtained",
+      "component": "ArticleCards",
+      "config": {},
+      "locales": {
+        "en": { "title": "Certifications Obtained" },
+        "fr": { "title": "Certifications Obtenues" }
+      },
+      "items": [
         {
-            "id": "certifications",
-            "component": "ArticleCards",
-            "config": {},
-            "locales": {
-                "en": { "title": "Certifications" },
-                "fr": { "title": "Certifications" }
-            },
-            "items": [
-                {
-                    "icon": {
-                        "img": null,
-                        "fa": "fa-solid fa-certificate",
-                        "faColors": {"bg": "#326CE5", "fill": "#EEE"}
-                    },
-                    "dates": {
-                        "start": "12/10/2024",
-                        "end": null
-                    },
-                    "links": [
-                        { "string": "see_certification", "href": "https://courses.cognitiveclass.ai/certificates/f178b80d9e484206ad6bb1c3abf909c3" }
-                    ],
-                    "locales": {
-                        "en": {
-                            "title": "**IBM**",
-                            "text": "Python for Data Science"
-                        },
-                        "fr": {
-                            "text": "Python pour la Science des Données"
-                        }
-                    }
-                },
-                {
-                    "icon": {
-                        "img": null,
-                        "fa": "fa-solid fa-sitemap",
-                        "faColors": {"bg": "#FFD700", "fill": "#111"}
-                    },
-                    "dates": {
-                        "start": "20/05/2024",
-                        "end": null
-                    },
-                    "links": [
-                        { "string": "see_certification", "href": "https://www.scrumstudy.com/" }
-                    ],
-                    "locales": {
-                        "en": {
-                            "title": "**ScrumStudy**",
-                            "text": "Scrum Fundamentals Certified (SFC)"
-                        },
-                        "fr": {
-                            "text": "Certifié Scrum Fundamentals (SFC)"
-                        }
-                    }
-                }
-            ]
+          "icon": { "img": null, "fa": "fa-solid fa-award", "faColors": {"bg": "#326CE5", "fill": "#EEE"} },
+          "dates": { "start": "2025-10-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "NVIDIA", "text": "Building LLM Applications With Prompt Engineering" },
+            "fr": { "text": "Construction d'applications LLM avec Prompt Engineering" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-brands fa-vercel", "faColors": {"bg": "#000", "fill": "#FFF"} },
+          "dates": { "start": "2025-07-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "Vercel", "text": "Next.js App Router Fundamentals" },
+            "fr": { "text": "Fondamentaux du Next.js App Router" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-brands fa-vercel", "faColors": {"bg": "#000", "fill": "#FFF"} },
+          "dates": { "start": "2025-07-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "Vercel", "text": "Next.js Pages Router Fundamentals" },
+            "fr": { "text": "Fondamentaux du Next.js Pages Router" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-brands fa-vercel", "faColors": {"bg": "#000", "fill": "#FFF"} },
+          "dates": { "start": "2025-07-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "Vercel", "text": "Next.js SEO Fundamentals" },
+            "fr": { "text": "Fondamentaux SEO de Next.js" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-brands fa-react", "faColors": {"bg": "#61DBFB", "fill": "#000"} },
+          "dates": { "start": "2025-07-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "Vercel", "text": "React Foundations for Next.js" },
+            "fr": { "text": "Fondamentaux de React pour Next.js" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-solid fa-hashtag", "faColors": {"bg": "#00BFFF", "fill": "#FFF"} },
+          "dates": { "start": "2025-04-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "The Hashgraph Association", "text": "Attendance Hashgraph Developer" },
+            "fr": { "text": "Participation Hashgraph Developer" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-solid fa-certificate", "faColors": {"bg": "#326CE5", "fill": "#EEE"} },
+          "dates": { "start": "2024-10-12", "end": null },
+          "links": [
+            { "string": "see_certification", "href": "https://courses.cognitiveclass.ai/certificates/f178b80d9e484206ad6bb1c3abf909c3" }
+          ],
+          "locales": {
+            "en": { "title": "IBM", "text": "Python for Data Science" },
+            "fr": { "text": "Python pour la Science des Données" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-solid fa-sitemap", "faColors": {"bg": "#FFD700", "fill": "#111"} },
+          "dates": { "start": "2024-05-20", "end": null },
+          "links": [
+            { "string": "see_certification", "href": "https://www.scrumstudy.com/" }
+          ],
+          "locales": {
+            "en": { "title": "ScrumStudy", "text": "Scrum Fundamentals Certified (SFC)" },
+            "fr": { "text": "Certifié Scrum Fundamentals (SFC)" }
+          }
         }
-    ]
+      ]
+    },
+    {
+      "id": "certifications_inprogress",
+      "component": "ArticleCards",
+      "config": {},
+      "locales": {
+        "en": { "title": "Certifications In Progress" },
+        "fr": { "title": "Certifications en cours d’acquisition" }
+      },
+      "items": [
+        {
+          "icon": { "img": null, "fa": "fa-solid fa-hourglass-half", "faColors": {"bg": "#FFA500", "fill": "#FFF"} },
+          "dates": { "start": "2025-01-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "NVIDIA", "text": "Building RAG Agents with LLMs" },
+            "fr": { "text": "Construction d'agents RAG avec LLMs" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-solid fa-hourglass-half", "faColors": {"bg": "#FFA500", "fill": "#FFF"} },
+          "dates": { "start": "2025-01-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "NVIDIA", "text": "Rapid Application Development with LLMs" },
+            "fr": { "text": "Développement rapide d’applications avec LLMs" }
+          }
+        },
+        {
+          "icon": { "img": null, "fa": "fa-solid fa-hourglass-half", "faColors": {"bg": "#FFA500", "fill": "#FFF"} },
+          "dates": { "start": "2025-01-01", "end": null },
+          "links": [],
+          "locales": {
+            "en": { "title": "NVIDIA", "text": "Deploying a Model for Inference at Production Scale" },
+            "fr": { "text": "Déploiement d’un modèle pour l’inférence à l’échelle production" }
+          }
+        }
+      ]
+    }
+  ]
 }
