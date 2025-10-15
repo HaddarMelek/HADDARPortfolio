@@ -1,102 +1,134 @@
 {
   "locales": {
-      "en": {
-          "title": "Academic Projects",
-          "title_long_prefix": "Here are some of my",
-          "title_long": "Academic Projects"
-      },
-      "fr": {
-          "title": "Projets Académiques",
-          "title_long_prefix": "Voici quelques-uns de mes",
-          "title_long": "Projets Académiques"
-      }
+    "en": {
+      "title": "Academic Projects",
+      "title_long_prefix": "Here are some of my",
+      "title_long": "Academic Projects"
+    },
+    "fr": {
+      "title": "Projets Académiques",
+      "title_long_prefix": "Voici quelques-uns de mes",
+      "title_long": "Projets Académiques"
+    }
   },
   "articles": [
-      {
-          "id": "portfolio",
-          "component": "ArticlePortfolio",
-          "config": {},
-          "locales": {},
-          "categories": [
-              {
-                  "id": "webapps",
-                  "locales": {
-                      "en": {"singular": "Web Application", "plural": "Web Applications"},
-                      "fr": {"singular": "Application Web", "plural": "Applications Web"}
-                  }
-              }
-          ],
-          "items": [
-              {
-                  "categoryId": "webapps",
-                  "icon": {
-                      "img": "images/pictures/ehealth.jpeg",
-                      "fa": "",
-                      "faColors": {"bg": null, "fill": null}
-                  },
-                  "links": [
-                      {"faIcon": "fa-solid fa-link", "href": "https://e-health-platform.vercel.app/"}
-                  ],
-                  "locales": {
-                      "en": {
-                          "title": "E-Health Platform",
-                          "text": "EHealthPlatform is a web application that unites patients and doctors with a single administrator. The platform allows patients to consult doctors, make appointments, and manage their profiles. Meanwhile, the administrator can manage user accounts, appointments, revenues, and analyze site activities using graphs.",
-                          "tags": ["ReactJS", "Web Development", "Healthcare"]
-                      },
-                      "fr": {
-                          "title": "Plateforme E-Health",
-                          "text": "EHealthPlatform est une application web qui unifie les patients et les médecins avec un administrateur unique. Ce projet permet aux patients de consulter des médecins, de prendre des rendez-vous et de gérer leur profil, tandis que l'administrateur peut gérer les comptes des utilisateurs, les rendez-vous, les revenus et analyser les activités sur le site à l'aide de graphiques.",
-                          "tags": ["ReactJS", "Développement Web", "Santé"]
-                      }
-                  }
-              },
-              {
-                  "categoryId": "webapps",
-                  "icon": {
-                      "img": "images/pictures/ecompulse.jpeg",
-                      "fa": "",
-                      "faColors": {"bg": null, "fill": null}
-                  },
-                  "links": [
-                      {"faIcon": "fa-brands fa-github", "href": "https://github.com/HaddarMelek/EcomPulse"}
-                  ],
-                  "locales": {
-                      "en": {
-                          "title": "EcomPulse",
-                          "text": "EcomPulse is a web-based e-commerce application developed in .NET, offering role management for both admins and customers. It provides a seamless shopping experience with a shopping cart system, order and payment processing, and a user management module.",
-                          "tags": ["ASP.NET Core MVC", "PostgreSQL", "E-commerce"]
-                      },
-                      "fr": {
-                          "title": "EcomPulse",
-                          "text": "EcomPulse est une application web e-commerce développée en .NET, permettant la gestion des rôles administrateur et client. Elle offre une expérience d'achat fluide avec un système de panier, de commande et de paiement, ainsi qu'un module de gestion des utilisateurs.",
-                          "tags": ["ASP.NET Core MVC", "PostgreSQL", "E-commerce"]
-                      }
-                  }
-              },
-              {
-                  "categoryId": "webapps",
-                  "icon": {
-                      "img": "images/pictures/cvmaker.jpeg",
-                      "fa": "",
-                      "faColors": {"bg": null, "fill": null}
-                  },
-                  "links": [
-                      {"faIcon": "fa-brands fa-github", "href": "https://github.com/HaddarMelek/my_cv_maker/"}
-                  ],
-                  "locales": {
-                      "en": {
-                          "title": "My CV Maker",
-                          "text": "My CV Maker is a Laravel-based application that allows users to create, view, update, and delete customized CVs online. The platform provides easy tools for editing personal information and managing CV templates.",
-                          "tags": ["Laravel", "CV", "Web Application"]
-                      },
-                      "fr": {
-                          "title": "My CV Maker",
-                          "text": "My CV Maker est une application basée sur Laravel permettant aux utilisateurs de créer, lire, mettre à jour et supprimer des CV personnalisés en ligne. La plateforme fournit des outils simples pour modifier les informations personnelles et gérer les modèles de CV.",
-                          "tags": ["Laravel", "CV", "Application Web"]
-                      }
-                  }
-              }
-          ]
-      }
+    {
+      "id": "portfolio",
+      "component": "ArticlePortfolio",
+      "config": {},
+      "locales": {},
+      "categories": [
+        {
+          "id": "webapps",
+          "locales": {
+            "en": {"singular": "Web Application", "plural": "Web Applications"},
+            "fr": {"singular": "Application Web", "plural": "Applications Web"}
+          }
+        },
+        {
+          "id": "mlprojects",
+          "locales": {
+            "en": {"singular": "ML Project", "plural": "ML Projects"},
+            "fr": {"singular": "Projet ML", "plural": "Projets ML"}
+          }
+        },
+        {
+          "id": "pythonapps",
+          "locales": {
+            "en": {"singular": "Python Application", "plural": "Python Applications"},
+            "fr": {"singular": "Application Python", "plural": "Applications Python"}
+          }
+        }
+      ],
+      "items": [
+        {
+          "categoryId": "mlprojects",
+          "icon": {"img": "images/pictures/pfa.jpeg","fa":"","faColors":{"bg":null,"fill":null}},
+          "links":[{"faIcon":"fa-brands fa-github","href":"https://github.com/HaddarMelek/CyberTrend"}],
+          "locales":{
+            "en":{
+              "title":"CyberTrend – End-of-Year Project",
+              "text":"Predicting cyberattacks using time-series analysis and news data collected via web scraping (Google News). Multiple predictive models were compared, including ARIMA, Prophet, LightGBM, XGBoost, and LSTM.",
+              "tags":["Python","Time-Series","Machine Learning","Cybersecurity"]
+            },
+            "fr":{
+              "title":"CyberTrend – Projet de Fin d’Année",
+              "text":"Prédiction des cyberattaques à partir de séries temporelles et d'actualités collectées via web scraping (Google News). Plusieurs modèles prédictifs ont été comparés : ARIMA, Prophet, LightGBM, XGBoost et LSTM.",
+              "tags":["Python","Séries Temporelles","Machine Learning","Cybersécurité"]
+            }
+          }
+        },
+        {
+          "categoryId": "webapps",
+          "icon": {"img":"images/pictures/ehealth.jpeg","fa":"","faColors":{"bg":null,"fill":null}},
+          "links":[{"faIcon":"fa-solid fa-link","href":"https://e-health-platform.vercel.app/"}],
+          "locales":{
+            "en":{
+              "title":"E-Health Platform",
+              "text":"A ReactJS web application connecting patients and doctors, with appointment management and administrator dashboard for overseeing users and site analytics.",
+              "tags":["ReactJS","Web Development","Healthcare"]
+            },
+            "fr":{
+              "title":"Plateforme E-Health",
+              "text":"Application web ReactJS connectant patients et médecins, avec gestion des rendez-vous et un tableau de bord pour l’administrateur afin de superviser les utilisateurs et analyser les activités du site.",
+              "tags":["ReactJS","Développement Web","Santé"]
+            }
+          }
+        },
+        {
+          "categoryId": "webapps",
+          "icon":{"img":"images/pictures/gustora.png","fa":"","faColors":{"bg":null,"fill":null}},
+          "links":[{"faIcon":"fa-brands fa-github","href":"https://github.com/HaddarMelek/Gustora"}],
+          "locales":{
+            "en":{
+              "title":"Gustora",
+              "text":"A Symfony restaurant management application with OTP authentication, product/order management, and automated invoice emailing.",
+              "tags":["Symfony","PHP","Web Development"]
+            },
+            "fr":{
+              "title":"Gustora",
+              "text":"Application Symfony de gestion de restaurant avec authentification OTP, gestion des produits/commandes et envoi automatique des factures par email.",
+              "tags":["Symfony","PHP","Développement Web"]
+            }
+          }
+        },
+        {
+          "categoryId":"mlprojects",
+          "icon":{"img":"images/pictures/classify.png","fa":"","faColors":{"bg":null,"fill":null}},
+          "links":[{"faIcon":"fa-brands fa-github","href":"https://github.com/HaddarMelek/Classifying_Fast_Food_Images"}],
+          "locales":{
+            "en":{"title":"Fast Food Image Classification","text":"Classification of fast food images using various machine learning models to identify and categorize different types of fast food.","tags":["Python","Computer Vision","ML"]},
+            "fr":{"title":"Classification d’Images de Fast Food","text":"Classification d’images de fast-food avec différents modèles de machine learning pour identifier et catégoriser les types de fast-food.","tags":["Python","Vision par Ordinateur","ML"]}
+          }
+        },
+        {
+          "categoryId":"pythonapps",
+          "icon":{"img":"images/pictures/pybank.png","fa":"","faColors":{"bg":null,"fill":null}},
+          "links":[{"faIcon":"fa-brands fa-github","href":"https://github.com/HaddarMelek/PyBank"}],
+          "locales":{
+            "en":{"title":"PyBank","text":"A Python application with a GUI for easy management of bank accounts, allowing users to create, update, and track accounts efficiently.","tags":["Python","GUI","Finance"]},
+            "fr":{"title":"PyBank","text":"Application Python avec interface graphique pour gérer facilement des comptes bancaires, permettant de créer, mettre à jour et suivre les comptes efficacement.","tags":["Python","GUI","Finance"]}
+          }
+        },
+        {
+          "categoryId":"webapps",
+          "icon":{"img":"images/pictures/ecompulse.jpeg","fa":"","faColors":{"bg":null,"fill":null}},
+          "links":[{"faIcon":"fa-brands fa-github","href":"https://github.com/HaddarMelek/EcomPulse"}],
+          "locales":{
+            "en":{"title":"EcomPulse","text":"Web-based e-commerce application developed in .NET with PostgreSQL database, providing role management, cart system, order processing, and user management modules.","tags":["ASP.NET Core MVC","PostgreSQL","E-commerce"]},
+            "fr":{"title":"EcomPulse","text":"Application e-commerce web développée en .NET avec base de données PostgreSQL, offrant gestion des rôles, panier, traitement des commandes et gestion des utilisateurs.","tags":["ASP.NET Core MVC","PostgreSQL","E-commerce"]}
+          }
+        },
+        {
+          "categoryId":"webapps",
+          "icon":{"img":"images/pictures/cvmaker.jpeg","fa":"","faColors":{"bg":null,"fill":null}},
+          "links":[{"faIcon":"fa-brands fa-github","href":"https://github.com/HaddarMelek/my_cv_maker/"}],
+          "locales":{
+            "en":{"title":"My CV Maker","text":"Laravel-based application to create, edit, and manage personalized CVs online with simple tools for personal information and template management.","tags":["Laravel","CV","Web Application"]},
+            "fr":{"title":"My CV Maker","text":"Application basée sur Laravel permettant de créer, éditer et gérer des CV personnalisés en ligne avec des outils simples pour les informations personnelles et la gestion des modèles.","tags":["Laravel","CV","Application Web"]}
+          }
+        }
+      ]
+    }
   ]
 }
