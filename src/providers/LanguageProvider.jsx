@@ -9,26 +9,26 @@ export const LanguageProvider = ({children}) => {
 
     const settings = getSettings()
     const strings = getStrings()
-    const allLanguages = settings['supportedLanguages'] || []
+
+    const languagesData = settings.supportedLanguages // garder les données brutes
     const localStorageName = 'language-preferences'
-    const canChangeLanguage = allLanguages.length >= 2
+    const canChangeLanguage = languagesData.length >= 2
 
     const [defaultLanguageId, setDefaultLanguageId] = useState(null)
     const [selectedLanguageId, setSelectedLanguageId] = useState(null)
 
-    /** On configurations loaded... **/
     useEffect(() => {
-        const defaultLanguage = allLanguages.find(language => language.default) || allLanguages[0]
+        const defaultLanguage = languagesData.find(lang => lang.default) || languagesData[0]
         setDefaultLanguageId(defaultLanguage.id)
 
         const localStorageItem = window.localStorage.getItem(localStorageName)
-        const savedLanguage = allLanguages.find(language => language.id === localStorageItem)
+        const savedLanguage = languagesData.find(lang => lang.id === localStorageItem)
         if(savedLanguage) {
             setSelectedLanguage(savedLanguage)
             return
         }
 
-        const detectedLanguage = allLanguages.find(language => navigator.language.includes(language['id'])) || defaultLanguage
+        const detectedLanguage = languagesData.find(lang => navigator.language.includes(lang['id'])) || defaultLanguage
         setSelectedLanguage(detectedLanguage)
     }, [])
 
@@ -40,38 +40,33 @@ export const LanguageProvider = ({children}) => {
     }
 
     const getSelectedLanguage = () => {
-        return allLanguages.find(language => language.id === selectedLanguageId)
+        return languagesData.find(lang => lang.id === selectedLanguageId)
     }
 
     const getAvailableLanguages = () => {
-        if(!allLanguages)
-            return []
-
-        return allLanguages.filter(language => language.id !== selectedLanguageId)
+        return languagesData.filter(lang => lang.id !== selectedLanguageId)
     }
 
     const getTranslation = (locales, key, shouldReturnNullIfNotFound) => {
-        if(!selectedLanguageId || !locales)
-            return "locale:" + key
+        if(!selectedLanguageId || !locales) return "locale:" + key
 
-        const selectedLanguageTranslations = locales[selectedLanguageId]
-        if(selectedLanguageTranslations && selectedLanguageTranslations[key]) {
-            return selectedLanguageTranslations[key]
-        }
+        const selectedTranslations = locales[selectedLanguageId]
+        if(selectedTranslations && selectedTranslations[key]) return selectedTranslations[key]
 
-        const defaultLanguageTranslations = locales[defaultLanguageId]
-        if(defaultLanguageTranslations && defaultLanguageTranslations[key]) {
-            return defaultLanguageTranslations[key]
-        }
+        const defaultTranslations = locales[defaultLanguageId]
+        if(defaultTranslations && defaultTranslations[key]) return defaultTranslations[key]
 
-        return !shouldReturnNullIfNotFound ?
-            "locale:" + key :
-            null
+        return !shouldReturnNullIfNotFound ? "locale:" + key : null
     }
 
-    const getString = (key) => {
-        return getTranslation(strings['locales'], key)
-    }
+    const getString = (key) => getTranslation(strings['locales'], key)
+
+    // JSX pour affichage des cercles EN / FR
+    const languageCircles = languagesData.map(lang => (
+        <div key={lang.id} className="language-circle">
+            <span>{lang.id.toUpperCase()}</span>
+        </div>
+    ))
 
     return (
         <LanguageContext.Provider value={{
@@ -81,11 +76,10 @@ export const LanguageProvider = ({children}) => {
             getSelectedLanguage,
             getAvailableLanguages,
             getTranslation,
-            getString
+            getString,
+            languageCircles
         }}>
-            {selectedLanguageId && (
-                <>{children}</>
-            )}
+            {selectedLanguageId && <>{children}</>}
         </LanguageContext.Provider>
     )
 }

@@ -122,9 +122,7 @@ export const DataProvider = ({children}) => {
             utils.resolvePath(settings.profile['profilePictureUrl'])
         ]
 
-        settings['supportedLanguages'].forEach(lang => {
-            images.push(utils.resolvePath(lang['flagUrl']))
-        })
+        
 
         sections.forEach(section => {
             if(!section.content || !section.content.articles)

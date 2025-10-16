@@ -14,7 +14,7 @@ function LanguagePicker({shrink}) {
         return {
             id: language.id,
             label: language.name,
-            imgUrl: utils.resolvePath(language["flagUrl"])
+            icon: language.icon
         }
     }
 
@@ -26,13 +26,15 @@ function LanguagePicker({shrink}) {
     return (
         <div>
             {canChangeLanguage && (
-                <DropdownPicker selectedOption={_toDropdownOption(selectedLanguage)}
-                                availableOptions={availableLanguages.map(_toDropdownOption)}
-                                onOptionSelected={_onOptionSelected}
-                                size={2}
-                                tooltip={null}
-                                alwaysForceDropdown={true}
-                                shrink={shrink}/>
+                <DropdownPicker
+                    selectedOption={_toDropdownOption(selectedLanguage)}
+                    availableOptions={availableLanguages.map(_toDropdownOption)}
+                    onOptionSelected={_onOptionSelected}
+                    size={2}
+                    tooltip={null}
+                    alwaysForceDropdown={true}
+                    shrink={shrink}
+                />
             )}
         </div>
     )

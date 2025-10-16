@@ -45,21 +45,19 @@
     ],
 
     "supportedLanguages": [
-        {
-            "name": "English",
-            "id": "en",
-            "flagUrl": "images/flags/en.png",
-            "default": true
-        },
-
-        {
-            "name": "Français",
-            "id": "fr",
-            "flagUrl": "images/flags/fr.png"
-        }
-    ],
-
-    "emailjs": {
-        
+    {
+      "name": "English",
+      "id": "en",
+      "icon": "fa-solid fa-globe",
+      "default": true
+    },
+    {
+      "name": "Français",
+      "id": "fr",
+      "icon": "fa-solid fa-globe"
     }
+  ]
+
+
+   
 }
