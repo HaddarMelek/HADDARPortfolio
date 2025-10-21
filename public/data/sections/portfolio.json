@@ -127,7 +127,34 @@
             "en":{"title":"My CV Maker","text":"Laravel-based application to create, edit, and manage personalized CVs online with simple tools for personal information and template management.","tags":["Laravel","CV","Web Application"]},
             "fr":{"title":"My CV Maker","text":"Application basée sur Laravel permettant de créer, éditer et gérer des CV personnalisés en ligne avec des outils simples pour les informations personnelles et la gestion des modèles.","tags":["Laravel","CV","Application Web"]}
           }
-        }
+        },
+        {
+  "categoryId": "mlprojects",
+  "icon": {
+    "img": "images/pictures/nlp.jpeg",
+    "fa": "",
+    "faColors": { "bg": null, "fill": null }
+  },
+  "links": [
+    {
+      "faIcon": "fa-brands fa-github",
+      "href": "https://github.com/HaddarMelek/elk_project"
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "ELK + MongoDB NLP Project",
+      "text": "End-to-end data pipeline integrating Elasticsearch, Logstash, Kibana (ELK) with MongoDB and NLP enrichment. The system ingests a cyberbullying dataset, performs preprocessing, sentiment analysis, and indexes data into Elasticsearch for visualization in Kibana. Includes Dockerized ELK setup and a simple API for querying processed data.",
+      "tags": ["ELK", "MongoDB", "NLP", "Docker", "Python"]
+    },
+    "fr": {
+      "title": "Projet ELK + MongoDB NLP",
+      "text": "Pipeline complet intégrant Elasticsearch, Logstash, Kibana (ELK) avec MongoDB et enrichissement NLP. Le système ingère un dataset de cyberharcèlement, effectue le prétraitement, l’analyse de sentiments et indexe les données dans Elasticsearch pour la visualisation via Kibana. Comprend un déploiement ELK Dockerisé et une API simple pour interroger les données traitées.",
+      "tags": ["ELK", "MongoDB", "NLP", "Docker", "Python"]
+    }
+  }
+}
+
       ]
     }
   ]
