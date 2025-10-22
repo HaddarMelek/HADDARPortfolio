@@ -48,7 +48,12 @@
             "jsonPath": "/data/sections/updates.json",
             "faIcon": "fa-solid fa-rss"
         },
-
+        {
+            "id": "downloadcv",
+            "categoryId": "more",
+            "jsonPath": "/data/sections/downloadcv.json",
+            "faIcon": "fa-solid fa-file-arrow-down"
+        },
         {
             "id": "contact",
             "categoryId": "more",

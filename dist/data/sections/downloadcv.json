@@ -1,0 +1,52 @@
+{
+  "locales": {
+    "en": {
+      "title": "Download My CV",
+      "title_long_prefix": "Access my",
+      "title_long": "**Professional** Resume"
+    },
+    "fr": {
+      "title": "Télécharger Mon CV",
+      "title_long_prefix": "Accédez à mon",
+      "title_long": "CV **Professionnel**"
+    }
+  },
+  "articles": [
+    {
+      "id": "cv-section",
+      "component": "DownloadCV",
+      "config": {
+        "style": "centered",
+        "buttonType": "primary"
+      },
+      "items": [
+        {
+          "icon": {
+            "img": "images/pictures/cv_icon.jpeg",
+            "fa": "fa-solid fa-file-arrow-down",
+            "faColors": { "bg": null, "fill": null }
+          },
+          "dates": {},
+          "locales": {
+            "en": {
+              "title": "Download My CV",
+              "info": "English Version",
+              "text": "Click below to download my latest English CV in PDF format.",
+              "tags": ["English", "Resume", "PDF"],
+              "buttonText": "Download English CV",
+              "file": "cv/CV_Melek_HADDAR_EN.pdf"
+            },
+            "fr": {
+              "title": "Télécharger Mon CV",
+              "info": "Version Française",
+              "text": "Cliquez ci-dessous pour télécharger la dernière version de mon CV en français au format PDF.",
+              "tags": ["Français", "CV", "PDF"],
+              "buttonText": "Télécharger le CV Français",
+              "file": "cv/CV_Melek_HADDAR_FR.pdf"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

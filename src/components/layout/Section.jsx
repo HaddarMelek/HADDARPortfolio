@@ -22,6 +22,7 @@ import {useData} from "/src/providers/DataProvider.jsx"
 import FaIcon from "/src/components/generic/FaIcon.jsx"
 import {useWindow} from "/src/providers/WindowProvider.jsx"
 import {useScheduler} from "/src/helpers/scheduler.js"
+import DownloadCV from '/src/components/articles/ArticleDownloadCV.jsx';
 
 const TransitionClasses = {
     HIDDEN: 'section-transition-hidden',
@@ -41,7 +42,8 @@ const ARTICLES = {
     ArticleServices,
     ArticleTestimonials,
     ArticleThread,
-    ArticleTimeline
+    ArticleTimeline,
+    DownloadCV: DownloadCV,
 }
 
 const utils = useUtils()
@@ -184,6 +186,7 @@ function SectionContent({articles}) {
             })}
         </div>
     )
+    
 }
 
 export default Section
